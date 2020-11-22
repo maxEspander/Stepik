@@ -1,21 +1,10 @@
-class A:
-    val = 1
+number_e = int(input())
+classes_e = dict()
+for _ in range(number_e):
+    cur_e = input().split()
+    classes_e[cur_e[0]] = cur_e[2:] if len(cur_e) > 2 else ''
 
-    def foo(self):
-        A.val += 2
+number_c = int(input())
 
-    def bar(self):
-        self.val += 1
-
-
-a = A()
-b = A()
-
-a.bar()
-a.foo()
-
-c = A()
-
-print(a.val)
-print(b.val)
-print(c.val)
+for _ in range(number_e):
+    cur_e = input()
